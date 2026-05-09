@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store Dashboard - GreenLeaf Nursery</title>
+    <link rel="stylesheet" href="../cssFile/globalStyles.css">
+</head>
+<body style="background-color: var(--bg);">
+
+    <nav class="navbar">
+        <a href="../index.html" class="nav-brand">
+            <img src="../sources/logo.svg" alt="GreenLeaf Logo">
+            GreenLeaf
+        </a>
+        <div class="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="care-guides.html">Care Guides</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="dashboard.html" class="active">Dashboard</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li>
+                <a href="cart.html" class="cart-icon">
+                    🛒 <span class="cart-count">0</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div style="padding: 2rem; max-width: 1200px; margin: 0 auto; width: 100%;">
+        <div class="dashboard-header">
+            <h2>Store Dashboard</h2>
+            <p>Welcome back, Admin</p>
+        </div>
+
+        <div class="dash-stats-row">
+            <div class="dash-stat-card">
+                <h3>48</h3>
+                <p>Total Products</p>
+            </div>
+            <div class="dash-stat-card" style="background: var(--dark);">
+                <h3>235</h3>
+                <p>Total Orders</p>
+            </div>
+            <div class="dash-stat-card" style="background: var(--accent);">
+                <h3>189</h3>
+                <p>Total Customers</p>
+            </div>
+            <div class="dash-stat-card" style="background: #27ae60;">
+                <h3>$12,450</h3>
+                <p>Total Revenue</p>
+            </div>
+        </div>
+
+        <div class="dash-actions-row">
+            <div class="dash-action-card">
+                <span style="font-size: 2rem; margin-bottom: 0.5rem;">👁</span>
+                <h4>View All Stock</h4>
+            </div>
+            <div class="dash-action-card">
+                <span style="font-size: 2rem; margin-bottom: 0.5rem;">➕</span>
+                <h4>Add New Product</h4>
+            </div>
+            <div class="dash-action-card">
+                <span style="font-size: 2rem; margin-bottom: 0.5rem;">✏️</span>
+                <h4>Update Product</h4>
+            </div>
+            <div class="dash-action-card">
+                <span style="font-size: 2rem; margin-bottom: 0.5rem;">🗑</span>
+                <h4>Delete Product</h4>
+            </div>
+        </div>
+
+        <div class="dash-table-container" style="margin-bottom: 2rem;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                <h3>Current Stock</h3>
+                <input type="text" id="dash-search" class="form-input" style="width: 250px;" placeholder="Search plant name...">
+            </div>
+            <table class="dash-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Plant Name</th>
+                        <th>Category</th>
+                        <th>Price</th>
+                        <th>Stock Qty</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#001</td>
+                        <td>Monstera Deliciosa</td>
+                        <td>Indoor</td>
+                        <td>$45.00</td>
+                        <td>12</td>
+                        <td><span style="color: green; font-weight: bold;">In Stock</span></td>
+                    </tr>
+                    <tr>
+                        <td>#002</td>
+                        <td>Snake Plant</td>
+                        <td>Indoor</td>
+                        <td>$25.00</td>
+                        <td>8</td>
+                        <td><span style="color: green; font-weight: bold;">In Stock</span></td>
+                    </tr>
+                    <tr>
+                        <td>#003</td>
+                        <td>Aloe Vera</td>
+                        <td>Succulents</td>
+                        <td>$15.00</td>
+                        <td>25</td>
+                        <td><span style="color: green; font-weight: bold;">In Stock</span></td>
+                    </tr>
+                    <tr>
+                        <td>#004</td>
+                        <td>Fiddle Leaf Fig</td>
+                        <td>Indoor</td>
+                        <td>$65.00</td>
+                        <td>3</td>
+                        <td><span style="color: orange; font-weight: bold;">Low Stock</span></td>
+                    </tr>
+                    <tr>
+                        <td>#005</td>
+                        <td>Lavender</td>
+                        <td>Outdoor</td>
+                        <td>$20.00</td>
+                        <td>15</td>
+                        <td><span style="color: green; font-weight: bold;">In Stock</span></td>
+                    </tr>
+                    <tr>
+                        <td>#006</td>
+                        <td>Cactus</td>
+                        <td>Succulents</td>
+                        <td>$18.00</td>
+                        <td>0</td>
+                        <td><span style="color: red; font-weight: bold;">Out of Stock</span></td>
+                    </tr>
+                    <tr>
+                        <td>#007</td>
+                        <td>Rose Bush</td>
+                        <td>Outdoor</td>
+                        <td>$35.00</td>
+                        <td>10</td>
+                        <td><span style="color: green; font-weight: bold;">In Stock</span></td>
+                    </tr>
+                    <tr>
+                        <td>#008</td>
+                        <td>Large Olive Tree</td>
+                        <td>Outdoor</td>
+                        <td>$120.00</td>
+                        <td>5</td>
+                        <td><span style="color: green; font-weight: bold;">In Stock</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="dash-table-container">
+            <h3>Monthly Sales (CSS Bar Chart)</h3>
+            <div class="bar-chart">
+                <div class="bar-wrapper">
+                    <div class="bar" style="height: 45%;"></div>
+                    <span>Jan</span>
+                </div>
+                <div class="bar-wrapper">
+                    <div class="bar" style="height: 60%;"></div>
+                    <span>Feb</span>
+                </div>
+                <div class="bar-wrapper">
+                    <div class="bar" style="height: 80%;"></div>
+                    <span>Mar</span>
+                </div>
+                <div class="bar-wrapper">
+                    <div class="bar" style="height: 95%;"></div>
+                    <span>Apr</span>
+                </div>
+                <div class="bar-wrapper">
+                    <div class="bar" style="height: 70%;"></div>
+                    <span>May</span>
+                </div>
+                <div class="bar-wrapper">
+                    <div class="bar" style="height: 100%;"></div>
+                    <span>Jun</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3>GreenLeaf Nursery</h3>
+                <p>Bring nature home with our premium selection of indoor and outdoor plants.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="care-guides.html">Care Guides</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact</h3>
+                <p>123 Plant Street</p>
+                <p>Email: info@greenleaf.com</p>
+                <p>Phone: +1 234 567 8900</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../jsFile/jsFunctions.js"></script>
+</body>
+</html>
