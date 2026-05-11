@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monstera Deliciosa - GreenLeaf Nursery</title>
+    <link rel="stylesheet" href="../cssFile/globalStyles.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="../index.html" class="nav-brand">
+            <img src="../sources/logo.svg" alt="GreenLeaf Logo">
+            GreenLeaf
+        </a>
+        <div class="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="care-guides.html">Care Guides</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li>
+                <a href="cart.html" class="cart-icon">
+                    🛒 <span class="cart-count">0</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="details-container">
+        <div class="details-image">
+            <img src="../sources/plant.svg" alt="Monstera Deliciosa">
+        </div>
+        <div class="details-info" data-id="1" data-name="Monstera Deliciosa" data-price="45.00" data-img="../sources/plant.svg">
+            <h2>Monstera Deliciosa</h2>
+            <div class="product-price" style="font-size: 2rem;">$45.00</div>
+            <p>The Monstera Deliciosa, famous for its natural leaf holes, is a vibrant and easy-to-care-for indoor plant. It brings a tropical feel to any room.</p>
+            
+            <div style="background: var(--light); padding: 1rem; border-radius: 10px;">
+                <h4>Care Instructions</h4>
+                <p>💧 Water every 1-2 weeks.</p>
+                <p>☀️ Medium to bright indirect light.</p>
+            </div>
+
+            <div class="qty-selector" style="margin-top: 1rem;">
+                <button class="qty-btn" id="qty-minus">-</button>
+                <span id="details-qty">1</span>
+                <button class="qty-btn" id="qty-plus">+</button>
+            </div>
+            
+            <button class="btn btn-primary btn-add-cart" style="width: 100%; margin-top: 1rem;">Add to Cart</button>
+        </div>
+    </div>
+
+    <section class="section-container">
+        <h2 class="section-title">Related Plants</h2>
+        <div class="cards-wrapper">
+            <div class="product-card" data-id="2" data-name="Snake Plant" data-price="25.00" data-img="../sources/plant.svg">
+                <a href="plant-details.html" class="product-img-box">
+                    <img src="../sources/plant.svg" alt="Snake Plant">
+                </a>
+                <div class="product-info">
+                    <span>Indoor</span>
+                    <h3>Snake Plant</h3>
+                    <div class="product-price">$25.00</div>
+                    <button class="btn btn-primary btn-add-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card" data-id="3" data-name="Aloe Vera" data-price="15.00" data-img="../sources/plant.svg">
+                <a href="plant-details.html" class="product-img-box">
+                    <img src="../sources/plant.svg" alt="Aloe Vera">
+                </a>
+                <div class="product-info">
+                    <span>Succulents</span>
+                    <h3>Aloe Vera</h3>
+                    <div class="product-price">$15.00</div>
+                    <button class="btn btn-primary btn-add-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card" data-id="4" data-name="Fiddle Leaf Fig" data-price="65.00" data-img="../sources/plant.svg">
+                <a href="plant-details.html" class="product-img-box">
+                    <img src="../sources/plant.svg" alt="Fig">
+                </a>
+                <div class="product-info">
+                    <span>Indoor</span>
+                    <h3>Fiddle Leaf Fig</h3>
+                    <div class="product-price">$65.00</div>
+                    <button class="btn btn-primary btn-add-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3>GreenLeaf Nursery</h3>
+                <p>Bring nature home with our premium selection of indoor and outdoor plants.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="care-guides.html">Care Guides</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact</h3>
+                <p>123 Plant Street</p>
+                <p>Email: info@greenleaf.com</p>
+                <p>Phone: +1 234 567 8900</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../jsFile/jsFunctions.js"></script>
+</body>
+</html>
